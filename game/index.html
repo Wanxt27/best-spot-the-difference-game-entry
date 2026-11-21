@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Almost Twins — Spot the Difference</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main id="app">
+    <header id="hud">
+      <div class="hud-left">
+        <div id="level-name">Almost Twins</div>
+        <div id="level-dots"></div>
+      </div>
+      <div class="hud-mid">
+        <div id="counter">Found 0 / 5</div>
+        <div id="time-wrap">
+          <div id="time-bar"></div>
+          <span id="time-label">120s</span>
+        </div>
+      </div>
+      <div class="hud-right">
+        <div id="score">Score 0</div>
+        <div class="hud-btns">
+          <button id="hint-btn" type="button">💡 Hint (3)</button>
+          <button id="restart-btn" type="button">↻ Restart</button>
+          <button id="mute-btn" type="button">🔊 Sound</button>
+        </div>
+      </div>
+    </header>
+
+    <section id="panels">
+      <figure class="panel" id="panel-left" aria-label="Left picture">
+        <figcaption>Picture A</figcaption>
+      </figure>
+      <div id="vs">VS</div>
+      <figure class="panel" id="panel-right" aria-label="Right picture">
+        <figcaption>Picture B</figcaption>
+      </figure>
+    </section>
+
+    <footer id="foot">
+      <span>Tap every difference before the clock runs out.</span>
+      <span class="keys">H hint · R restart · M sound</span>
+    </footer>
+
+    <div id="overlay" class="hidden"></div>
+  </main>
+  <script type="module" src="src/main.js"></script>
+</body>
+</html>
